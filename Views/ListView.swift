@@ -12,7 +12,7 @@ struct ListView: View {
     @State var items: [String] = [
         "This is the first title",
         "This is the second title",
-        "Third!"
+        "4!"
     ]
     
     var body: some View {
