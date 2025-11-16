@@ -1,11 +1,13 @@
 ToDo List: my first app!
 
 Hello! I'm Martina and this is my first iOS app! 
-I created this app because I was tired of having post-it notes everywhere and always forgetting what I needed to buy at the supermarket. A  simple and intuitive iOS application, developed in SwiftUI following the MVVM architecture.
+I created this app because I was tired of having post-it notes everywhere and always forgetting what I needed to buy at the supermarket. A simple and intuitive iOS application, developed in SwiftUI following the MVVM architecture.
 
 
 What is this app?
+
 It's a to-do list app, like a digital shopping list.
+
 I divided everything into 4 categories:
 • Today → Things to do today (like "Call Mom")
 • Tomorrow → Things I can put off until tomorrow
