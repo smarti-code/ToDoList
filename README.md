@@ -15,6 +15,7 @@ I divided everything into 4 categories:
 • Some day → Future plans and dreams
 
 What can you do?
+
 The basic things:
 • Add to-dos - Click the "+" and type
 • Complete them - One tap and it turns green ✓
@@ -27,21 +28,26 @@ The basic things:
 
 
 How is it structured?
+
 ItemModel.swift
 It defines two main data structures:
+
 CategoryModel
 struct CategoryModel: Codable, Identifiable, Equatable {
     let id: String
     var title: String }
+    
 • Manages the categories in the list
 • Includes 4 predefined categories: today, tomorrow, groceries, someday
 • Titles are user-editable
+
 ItemModel
 struct ItemModel: Identifiable, Codable {
     let id: String
     let title: String
     let isCompleted: Bool
     let categoryId: String }
+    
 • Represents a single task
 • Immutable (struct)
 • Linked to a category via categoryId
@@ -52,11 +58,13 @@ struct ItemModel: Identifiable, Codable {
 
 
 ListViewModel.swift
+
 The "brain" of the application that manages:
 • Items array (all tasks)
 • Array of categories (all categories)
 • CRUD operations (Create, Read, Update, Delete)
 • Saving and loading from UserDefaults
+
 Main functions:
 • addItem(title:categoryId:) - Adds a new task
 • updateItem(item:) - Completes/discompletes a task
@@ -67,11 +75,13 @@ Main functions:
 
 
 ListView.swift
+
 The main app view showing:
 • All categories in separate sections
 • TextField inline to add/edit texts
 • Toolbar with "Done" button
 • Keyboard focus management
+
 Managed states:
 • isEditingTitle - Changing the main title
 • editingCategoryId - Category being edited
@@ -80,6 +90,7 @@ Managed states:
 
 
 ListRowView.swift
+
 View for each individual task showing:
 • Status icon (red/green circle with check)
 • Task title
@@ -87,24 +98,30 @@ View for each individual task showing:
 
 
 How is it used?
+
 Add a Task
 1.Click the "+" button next to the category name
 2.Type task text (minimum 2 characters)
 3.Press "Done" at the top right or Enter on the keyboard
+
 Complete/Do not complete a Task
 1.Single tap on the task
 2.The icon will change from red circle to green circle (or vice versa)
+
 Modify a Task
 1.Double tap on the task
 2.Edit text
 3.Press "Done" at the top right or Enter
+
 Delete a Task
 1.Swipe left on task
 2.Press the red "Delete" button
+
 Change the Name of a Category
 1.Tap on the category title (e.g. "Today")
 2.Edit text
 3.Press "Done" at the top right
+
 Amend the Main Title
 1.Tap on the title "ToDo List📝" at the top
 2.Edit text
@@ -114,6 +131,7 @@ Amend the Main Title
 
 
 Things I don't know how to do yet, but I want to add in the future
+
 • Cloud Sync → I would like it to work on all my devices 
 • Sharing with friends → Type "Family shopping list"
 • Notifications → "Hey, you forgot to buy milk!"
@@ -122,11 +140,13 @@ Things I don't know how to do yet, but I want to add in the future
 
 
 The apps I took inspiration from
-Apple Reminders → I got: the idea of the sections, the minimalist design → I didn't like it: too simple, missing features
+
+Apple Reminders → I got: the idea of the sections, the minimalist design → I didn't like it: too simple, missing features;
 Any.do → I got: the division into categories
 
 
 Reasons why I'm glad I did
+
 1.I'm learning to program → From scratch to a working app
 2.I have an app I actually use → I don't have post-its everywhere anymore!
 3.I solved my problem → It's mine, it works the way I want it to
@@ -135,29 +155,26 @@ Reasons why I'm glad I did
 
 
 
-App version: 1.0
-Date: November 2025
-Status: It works!
-Programming level: Beginner (but proud!)
-iOS: 15.0+
-Xcode: 14.0+
-Swift: 5.5+
-Framework: SwiftUI
+App version: 1.0;
+Date: November 2025;
+Status: It works;
+Programming level: Beginner (but proud!);
+iOS: 15.0+;
+Xcode: 14.0+;
+Swift: 5.5+;
+Framework: SwiftUI;
 
 
 Thanks to...
-• YouTube for endless tutorials
-
-• Claude AI for answering my every question 
-
-• My Mac so it doesn't explode 
-
+• YouTube for endless tutorials;
+• Claude AI for answering my every question;
+• My Mac so it doesn't explode;
 • Coffee to exist
 
 
 
 Developer 
-Martina Maria Bruno, Beginner iOS Developer
+Martina Maria Bruno, Beginner iOS Developer; 
 License
 This project was created for educational purposes.
 Project developed while learning SwiftUI and iOS development.
