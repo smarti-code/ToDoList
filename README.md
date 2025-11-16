@@ -145,9 +145,13 @@ Framework: SwiftUI
 
 Thanks to...
 • YouTube for endless tutorials
+
 • Claude AI for answering my every question 
+
 • My Mac so it doesn't explode 
+
 • Coffee to exist
+
 
 
 Developer 
