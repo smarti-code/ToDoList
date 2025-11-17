@@ -136,7 +136,7 @@ Things I don't know how to do yet, but I want to add in the future
 • Sharing with friends → Type "Family shopping list"
 • Notifications → "Hey, you forgot to buy milk!"
 • Widget → See my tasks from home
-• Custom Colors → Why Does Everything Have to Be Apple Blue?
+• Custom Colors → Why Does Everything Have to Be Blue?
 
 
 The apps I took inspiration from
